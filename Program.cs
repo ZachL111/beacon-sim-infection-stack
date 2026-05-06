@@ -3,6 +3,7 @@ using BeaconSimInfectionStack;
 if (args.Contains("--test"))
 {
     PolicyTests.Run();
+    DomainReviewTests.Run();
     return;
 }
 

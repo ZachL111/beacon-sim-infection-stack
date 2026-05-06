@@ -59,3 +59,5 @@ foreach ($pathPattern in $knownPaths) {
 }
 
 dotnet run -- --test
+
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-beacon-sim-infection-detail.ps1
