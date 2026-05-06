@@ -1,0 +1,32 @@
+{
+  "index": 198,
+  "phase": 2,
+  "batch": 22,
+  "name": "beacon-sim-infection-stack",
+  "planned_name": "beacon-sim-infection-stack",
+  "language": "C#",
+  "category": "Simulations",
+  "goal": "Create a C# reference implementation for infection workflows, centered on security rule linting, safe and unsafe fixtures, and remediation hints.",
+  "repository_url": "https://github.com/ZachL111/beacon-sim-infection-stack",
+  "verification_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/verify.ps1",
+  "model": {
+    "inputs": [
+      "demand",
+      "capacity",
+      "latency",
+      "risk",
+      "weight"
+    ],
+    "threshold": 179,
+    "risk_penalty": 4,
+    "latency_penalty": 3,
+    "weight_bonus": 3,
+    "decision_rule": "accept when score is greater than or equal to threshold, otherwise review"
+  },
+  "quality_gates": [
+    "readme constraint scan",
+    "fixture presence check",
+    "metadata JSON parse",
+    "language verifier"
+  ]
+}
