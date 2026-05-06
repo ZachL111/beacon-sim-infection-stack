@@ -1,0 +1,17 @@
+{
+  "repo": "beacon-sim-infection-stack",
+  "thresholds": {
+    "signal": 4,
+    "slack": 2,
+    "confidence": 1,
+    "drag": 4,
+    "ship": 197,
+    "watch": 118
+  },
+  "terms": [
+    "input pressure",
+    "state drift",
+    "review cost",
+    "decision risk"
+  ]
+}
